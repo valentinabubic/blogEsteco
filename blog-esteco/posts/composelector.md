@@ -32,7 +32,13 @@ sitemap:
 
 Cardanit’s collaborative features, user-friendly interface, and compliance with the BPMN 2.0 and DMN standards helped develop an innovative approach to composite design and manufacturing process, enhancing informed decision-making across departments. Here’s how Cardanit helped tackle this daunting task effectively in the framework of the EU-funded project COMPOSELECTOR.
 
-![DMN decision](/assets/img/blog/DMN-decision.png)&nbsp;
+
+<Image
+        src="/images/DMN-decision.png"
+        alt="Picture of the author"
+        width={500}
+        height={500}
+      />
 
 The Challenge {.a-badge .a-badge--primary .a-badge--m .a-badge--blog}
 ## Embrace decision modeling and process modeling within a single framework {.no-top-space}
@@ -49,8 +55,12 @@ The selection of new materials for a product needs to take into account differen
 
 The knowledge about the underlying process is often scattered inside the organization with no single source of truth nor a shared representation for such knowledge. This makes the management of the process difficult, if not impossible.
 
-<picture><source srcset="/assets/img/blog/quotes-Cardanit-Composelector-1.png" media="(min-width: 40rem)"><img src="/assets/img/blog/quotes-Cardanit-Composelector-mobile-1.png" alt="The knowledge about the underlying process is often scattered inside the organization with no single source of truth nor a shared representation for such knowledge.">
-</picture>
+<Image
+        src="/images/quotes-Cardanit-Composelector-1.png"
+        alt="The knowledge about the underlying process is often scattered inside the organization with no single source of truth nor a shared representation for such knowledge."
+        width={500}
+        height={500}
+      />
 
 Business decision-makers need access to tailored data from the engineering departments to make informed, timely decisions.
 
@@ -64,13 +74,24 @@ The Solution  {.a-badge .a-badge--primary .a-badge--m .a-badge--blog}
 As mentioned above, the decision-making process in the composite material design happens at three levels: business, engineering, and simulation.
 
 ![Cardanit worflow for Composelector](/assets/img/blog/Cardanit-workflow-Composelector.png)&nbsp;
+<Image
+        src="/images/Cardanit-workflow-Composelector.png"
+        alt="Picture of the author"
+        width={500}
+        height={500}
+      />
 
 This insight shaped the way materials modeling was coupled to business process and decision management in the EU-funded project COMPOSELECTOR, where Cardanit was used as the tool of reference for business and decision process modeling.
 
 With the help of Cardanit, we, as COMPOSELECTOR project partners, developed a Business Decision Support System (BDSS) that integrates material modeling with business process modeling within a single framework.
 
-<picture><source srcset="/assets/img/blog/quotes-Cardanit-Composelector-2.png" media="(min-width: 40rem)"><img src="/assets/img/blog/quotes-Cardanit-Composelector-mobile-2.png" alt="With the help of Cardanit, we, as COMPOSELECTOR project partners, developed a Business Decision Support System (BDSS) that integrates material modeling with business process modeling within a single framework.">
-</picture>
+
+<Image
+        src="/images/quotes-Cardanit-Composelector-2.png"
+        alt="With the help of Cardanit, we, as COMPOSELECTOR project partners, developed a Business Decision Support System (BDSS) that integrates material modeling with business process modeling within a single framework."
+        width={500}
+        height={500}
+      />
 
 BDSSs are information systems that support and facilitate business decision-making processes. With a BDSS we can represent and store knowledge about existing decision processes. The BDSS can then use this knowledge to orchestrate processes and help people make informed decisions.
 

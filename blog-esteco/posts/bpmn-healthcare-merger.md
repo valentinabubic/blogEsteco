@@ -23,11 +23,21 @@ sitemap:
 
 Business Process Modeling and Notation is quite a simple standard. People who are not familiar with BPMN elements may also need a description of the diagram of the model implemented during the process analysis. This is why business consultants and analysts tend to share a more readable ‘user manual’, which Cardanit produces at the click of a button, when presenting the results of their work.
 
-![BPMN healthcare merger: Canadian Medical reception](/assets/img/blog/BPMN_healthcare_merger.jpg)&nbsp;
+<Image
+        src="/images/BPMN_healthcare_merger.jpg"
+        alt="BPMN healthcare merger: Canadian Medical reception"
+        width={500}
+        height={500}
+      />
 
 Learn how Cardanit helped Michal Breda, Process Modeling Specialist at EUC Premium in the Czech Republic, efficiently streamline the merger process of two healthcare companies. Michal and his team managed to smoothly draw hundreds of BPMN workflows in a very short time. At the same time, using Cardanit collaboration features, and most of all the automated report, Michal’s team shared their results with the different stakeholders from the two companies. All the processes were clearly understood and the Cardanit report became the starting point of their internal Quality Management process document.
 
-![BPMN merger implementation: medical practice](/assets/img/blog/BPMN_merger_implementation.jpg)&nbsp;
+<Image
+        src="/images/BPMN_merger_implementation.jpg"
+        alt="BPMN merger implementation: medical practice"
+        width={500}
+        height={500}
+      />
 
 The deadline for the merger was 1 April 2021 and Cardanit enabled EUC Premium to:  
 
@@ -47,14 +57,23 @@ In November, a merger of EUC Premium with another subsidiary, Canadian Medical w
 
 From January to the end of March 2020, they worked on **integrating the processes of both companies** into a unified environment. Integration was split into several stages depending on the possibilities of integration of information systems. Starting from April 2020, the teams of the two companies have worked together, with an expected completion date of the integration of all the processes by 1 April 2021.
 
-![BPMN healthcare merger: business process model and notation workflow](/assets/img/blog/BPMN_healthcare_process.jpg)&nbsp;
+<Image
+        src="/images/BPMN_healthcare_process.jpg"
+        alt="BPMN healthcare merger: business process model and notation workflow"
+        width={500}
+        height={500}
+      />
 
 The solution - Cardanit BPMN editor {.a-badge .a-badge--primary .a-badge--m .a-badge--blog}
 
 In Michal Breda’s words, “because we were able to **quickly and efficiently describe the processes** of both companies with the BPMN methodology in the Cardanit environment, it helped to manage the integration of the processes of both companies. These processes were partly different depending on the various information systems, and the graphical models helped all teams understand the processes of the other side and design a common integrated functional system.”
 
-<picture><source srcset="/assets/img/blog/BPMN_specialist_quote.jpg" media="(min-width: 40rem)"><img src="/assets/img/blog/BPMN_specialist_quote-mobile.jpg" alt="I've found very useful all the collaboration features like the internal chat and the share functionality and most of all, the **automated report**">
-</picture>
+<Image
+        src="/images/BPMN_specialist_quote-mobile.jpg"
+        alt="I've found very useful all the collaboration features like the internal chat and the share functionality and most of all, the **automated report**"
+        width={500}
+        height={500}
+      />
 
 The benefits - Collaboration and report {.a-badge .a-badge--primary .a-badge--m .a-badge--blog}
 

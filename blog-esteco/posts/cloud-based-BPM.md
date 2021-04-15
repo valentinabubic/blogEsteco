@@ -12,7 +12,13 @@ seoImage: '/assets/img/blog/Cardanit-image-collaboration-blog.jpg'
 sitemap:
     changefreq: weekly
 ---
-![Cloud-based BPM with Cardanit](/assets/img/blog/Cardanit-image-collaboration-blog.jpg)
+
+<Image
+        src="/images/Cardanit-image-collaboration-blog.jpg"
+        alt="Cloud-based BPM with Cardanit"
+        width={500}
+        height={500}
+      />
 Getting all the stakeholders on board in a timely and efficient manner has always been at the heart of successful **business process modeling**. Whether internal or external, business users or peer **process modelers**, collecting input from relevant players from different departments or even different organizations has been part of the routine even before the pandemic set a new paradigm on how businesses operate. 
 
 With remote work skyrocketing to unprecedented levels across the world, both employee and customer habits changed overnight. In this era of the so-called new normal, having **formally defined processes** through a widely used notation standard like **BPMN** has become ever so important for many reasons. To name a few, it minimizes the execution inefficiencies that can occur due to individual interpretations of a task at stake, and it sets ground for **process automation** that can make or break a business in these challenging times. 
@@ -36,7 +42,13 @@ None of our colleagues at the Accounting and People Operations department had tr
 
 As for the rest, they’ve managed to draw the **BPMN diagrams** for all their procedures on their own in just a couple of weeks, exchanging all feedback directly from the Cardanit editor. There was no need to exchange emails and screenshots, or to attend endless Zoom or Meet conferences - **Cardanit editor** had everything they needed to collect and process feedback on the BPMN diagrams.
 
-![Cardanit BPMN workflow for new employee onboarding](/assets/img/blog/New-hire.jpg)
+<Image
+        src="/images/New-hire.jpg"
+        alt="Cardanit BPMN workflow for new employee onboarding"
+        width={500}
+        height={500}
+      />
+
 Image: New hire procedure modeled in Cardanit{.a-label .a-label--reduced .soul-space-stack-bottom-m}
 
 First, we set up a remote **collaborative modeling session** with our **BPMN expert** to introduce the basics of **Cardanit** and **BPMN**. Then our coworkers held a second session on their own to apply the acquired knowledge and design the first process diagram, without the BPMN expert. Finally, another session was held with the BPMN expert to check this model and transfer more knowledge about BPMN.
@@ -44,11 +56,23 @@ First, we set up a remote **collaborative modeling session** with our **BPMN exp
 After a couple of procedures modeled this way, the Accounting and People Operations department started working on other process models independently, interacting with the BPMN expert only for feedback and to explore more **advanced BPMN concepts**. In just a few weeks, all the most important **procedures** were successfully **modeled**.
 
 ![Cardanit BPMN diagram for medical visit](/assets/img/blog/Company-medical-visit.jpg)
+<Image
+        src="/images/Company-medical-visit.jpg"
+        alt="Cardanit BPMN diagram for medical visit"
+        width={500}
+        height={500}
+      />
 Image: Company medical visit modeled in Cardanit{.a-label .a-label--reduced .soul-space-stack-bottom-m}
 
 Thanks to Cardanit, they now have **BPMN models** as reference **documentation** for all their **processes**. This information is easy to understand even for the new hires.
 
 ![Cardanit BPMN diagram for intern onboarding](/assets/img/blog/Interns-onboarding.jpg)
+<Image
+        src="/images/Interns-onboarding.jpg"
+        alt="Cardanit BPMN diagram for intern onboarding"
+        width={500}
+        height={500}
+      />
 Image: Interns onboarding modeled in Cardanit{.a-label .a-label--reduced .soul-space-stack-bottom-m}
 
 ## The power of a cloud-based BPMN editor
@@ -63,11 +87,12 @@ Yet, old-style information sharing is still widely present more than many **busi
 This scattered way of collecting and processing feedback can create bottlenecks that often manifest in the form of interpretation issues or unexpected last minute changes to **process workflows**. Needless to say, this approach to collaborative process modeling is a thing of the past. 
 
 On the other hand, fostering discussion on **workflows** and processing real-time feedback directly from a cloud-based editor, accessible from anywhere, can significantly cut project completion times. You can literally get everyone on the same page directly from your BPMN editor: all the **stakeholders**, internal and external, people from different departments and even different organizations, from top management to **process executors** and fellow **modelers.** 
-
-<picture>
-    <source srcset="/assets/img/blog/Social-quotes-Cardanit-HR.jpg" media="(min-width: 40rem)">
-    <img src="/assets/img/blog/Social-quotes-Cardanit-HR-mobile.jpg" alt="Cardanit cloud-based BPMN editor">
-</picture>
+<Image
+        src="/images/Social-quotes-Cardanit-HR-mobile.jpg"
+        alt="Cardanit cloud-based BPMN editor"
+        width={500}
+        height={500}
+      />
 
 Handling all the conversations related to business process modeling from a unique, connected and accessible location can streamline project execution by minimizing the use of a multitude of communication tools available both within your organization and outside (Skype, Meet, Zoom, Drive…). 
 

@@ -31,6 +31,12 @@ The Decision Model and Notation (DMN) is a standard written and maintained by th
 DMN combines years of expertise in Business Rules management and Decision Optimization into a modern graphical and tabular language. The Object Management Group periodically reviews the standard and the current 1.3 release defines both the appearance and the interchange format learning the lesson of BPMN.
 
 ![DMN Elements](/assets/img/blog/DMN-elements-post.svg){.ca-desktop-reduced-width}&nbsp;
+<Image
+        src="/images/DMN-elements-post.svg"
+        alt="RICHIEDI SVG"
+        width={500}
+        height={500}
+      />
 
 **DMN consists of three parts:**
 
@@ -40,6 +46,14 @@ DMN combines years of expertise in Business Rules management and Decision Optimi
 
 <picture><source srcset="/assets/img/blog/quotes-Cardanit-DMN-1.png" media="(min-width: 40rem)"><img src="/assets/img/blog/quotes-Cardanit-DMN-mobile-1.png" alt="Cardanit quote DMN">
 </picture>
+<br>
+<Image
+        src="/images/quotes-Cardanit-DMN-1.png"
+        alt="Cardanit quote DMN"
+        width={500}
+        height={500}
+        media ={40rem}
+      />
 
 Whether you want to visualize strategic decision chains and relative KPIs, optimize operational procedures, or to automate and speed up repetitive assessments, DMN is the answer.
 
@@ -47,6 +61,12 @@ While BPMN deployments often require IT intervention, DMN is thought to be in th
 
 <picture><source srcset="/assets/img/blog/quotes-Cardanit-DMN-2.png" media="(min-width: 40rem)"><img src="/assets/img/blog/quotes-Cardanit-DMN-mobile-2.png" alt="Cardanit quote DMN">
 </picture>
+<Image
+        src="/images/quotes-Cardanit-DMN-2.png"
+        alt="Cardanit quote DMN"
+        width={500}
+        height={500}
+      />
 
 Should I have to model processes or decisions first?
 ----------------------------------------------------
@@ -55,6 +75,13 @@ Business analysts used to have endless discussions about which one should be con
 
 <picture><source srcset="/assets/img/blog/quotes-Cardanit-DMN-3.png" media="(min-width: 40rem)"><img src="/assets/img/blog/quotes-Cardanit-DMN-mobile-3.png" alt="Cardanit quote DMN">
 </picture>
+<Image
+        src="/images/quotes-Cardanit-DMN-3.png"
+        alt="Cardanit quote DMN"
+        width={500}
+        height={500}
+        min-width={40rem} 
+      />
 
 How can I manage complexity with DMN?
 -------------------------------------
@@ -81,8 +108,7 @@ All the graphical elements drawn with BPMN and DMN have their XML transcription,
             <source src="/assets/video/Cardanit-social-teaser.mp4" type="video/mp4">
         </video>
     </div>
-
-  
+ 
 
 Is automation not possible in your environment? Are you not ready for that? Cardanit offers you a way to easily support an organization that is not ready for the digital transformation but wants to start managing their processes. Because processes and decisions exist and even in the most advanced organization people are the engine. Hence, you need a user manual. Cardanit offers you a human-readable model report in PDF and DOCX formats. By means of the “description” attribute available in BPMN and DMN, you can complete the graphical representation with instructions and all the relevant information. You do not need to be a DMN expert to read the report that guides you through the decision tree.
 

@@ -4,7 +4,7 @@ import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import { getSortedPostsData } from "./lib/posts.js";
 import Date from './components/date'
-
+import Image from 'next/image'
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
   return {
@@ -23,7 +23,7 @@ export default function Home({ allPostsData }) {
       </Head>
       
       <section className={utilStyles.headingMd}>
-        
+      
       
         
         <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>

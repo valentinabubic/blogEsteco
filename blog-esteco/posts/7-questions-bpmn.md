@@ -32,7 +32,12 @@ Despite there are several analogies between the two of them, their difference li
 
 The BPM cycle is usually represented by a circle of activities. Although a circle does not have a start and an end, you may have already encountered the BPM cycle portrayed with numbered steps.
 
-![BPM Lifecycle](/assets/img/blog/BPM-Life-cycle.png){.ca-desktop-reduced-width}&nbsp;
+<Image
+        src="/images/BPM-Life-cycle.png"
+        alt="Picture of the author"
+        width={500}
+        height={500}
+      />
 
 **In a few words the five steps are:**
 
@@ -51,7 +56,12 @@ The most recent techniques in process management are shortcuts through the above
 
 The BPMN standard is conceptually simple, but incredibly expressive.
 
-![BPMN elements](/assets/img/blog/BPMN-elements.png){.ca-desktop-reduced-width}&nbsp;
+<Image
+        src="/images/BPMN-elements.png"
+        alt="Picture of the author"
+        width={500}
+        height={500}
+      />
 
 **If you want to know its basics, you just need to learn what the four shapes represent:**
 
@@ -84,6 +94,12 @@ And there’s more: the XML file also contains hidden attributes with the necess
 
 <picture><source srcset="/assets/img/blog/quotes-Cardanit-BPMN.png" media="(min-width: 40rem)"><img src="/assets/img/blog/quotes-Cardanit-BPMN-mobile.png" alt="cardanit quote">
 </picture>
+<Image
+        src="/images/quotes-Cardanit-BPMN-mobile.png"
+        alt="Picture of the author"
+        width={500}
+        height={500}
+      />
 
 7\. Is modeling enough?
 -----------------------
