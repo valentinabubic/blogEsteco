@@ -5,7 +5,7 @@ authorBio: 'Alessandro Turco has a PhD in Applied Math from the International Sc
 and a Master in Management from the School of Management of Milan Polytechnic (MIP). 
 He has been working for ESTECO SpA for ten years, starting as a researcher for the Numerical Method Group. He is now the 
 project manager of Cardanit, the BPM solution from ESTECO.'
-authorAvatar: '/assets/img/blog/Alessandro-Turco-profile-picture.png'
+authorAvatar: '/images/Alessandro-Turco.png'
 layout: blog_layout.njk
 title: "7 questions every business analyst asks about BPMN"
 tag: "The BPMN standard"
@@ -14,7 +14,8 @@ seoTitle: 'BPMN modeling | Analyze processes more efficiently'
 seoDescription: 'Business Process Modeling and Notation explained  in seven easy points for business analysts.'
 seoImage: '/assets/img/blog/BPM-Life-cycle.png'
 sitemap:
-    changefreq: weekly
+changefreq: weekly
+
 ---
 
 1\. Why BPMN modeling?
@@ -92,8 +93,6 @@ The graphical representation is just half of what Business Process Model and Not
 
 And there’s more: the XML file also contains hidden attributes with the necessary information to integrate the model with enterprise systems and automate the process. We’d like to think this is the real reason behind the success of BPMN: the XML translation is the link between Business and IT. Thanks to BPMN, Business and IT can speak the same language and work directly on the same process model: requirements are explicit, no further translations are required, execution semantic is incorporated in the model drawing and everything is ready for automation. Process Simulation is also enabled by the XML transcription. Indeed, it is possible to add some further lines to the XML and exploit BPSim simulation capabilities, which is something we are going to talk about in other posts soon.
 
-<picture><source srcset="/assets/img/blog/quotes-Cardanit-BPMN.png" media="(min-width: 40rem)"><img src="/assets/img/blog/quotes-Cardanit-BPMN-mobile.png" alt="cardanit quote">
-</picture>
 <Image
         src="/images/quotes-Cardanit-BPMN-mobile.png"
         alt="Picture of the author"

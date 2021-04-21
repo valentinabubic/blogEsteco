@@ -7,7 +7,7 @@ The same year he joined ESTECO. Dario contributes to research activities in the 
 He took part to both regional and European research projects. He is co-author of papers on business process management 
 and modelling. Since 2017 he’s involved in the COMPOSELECTOR H2020 project, where he contributes to the modeling of processes 
 and decisions underlying the industrial application cases.'
-authorAvatar: '/assets/img/blog/Dario-Campagna-profile-picture.jpg'
+authorAvatar: '/images/Dario-Campagna-profile-picture.jpg'
 layout: blog_layout.njk
 title: "Embracing BPMN and DMN for better informed decisions in the composite materials design"
 tag: "Success story"
@@ -32,7 +32,6 @@ sitemap:
 
 Cardanit’s collaborative features, user-friendly interface, and compliance with the BPMN 2.0 and DMN standards helped develop an innovative approach to composite design and manufacturing process, enhancing informed decision-making across departments. Here’s how Cardanit helped tackle this daunting task effectively in the framework of the EU-funded project COMPOSELECTOR.
 
-
 <Image
         src="/images/DMN-decision.png"
         alt="Picture of the author"
@@ -40,8 +39,9 @@ Cardanit’s collaborative features, user-friendly interface, and compliance wit
         height={500}
       />
 
-The Challenge {.a-badge .a-badge--primary .a-badge--m .a-badge--blog}
-## Embrace decision modeling and process modeling within a single framework {.no-top-space}
+## The Challenge 
+
+## Embrace decision modeling and process modeling within a single framework 
 
 Complex operational decisions are the norm when it comes to composite materials design and manufacturing. In fact, the decision-making in the composites design process happens at three levels: business, engineering, and simulation. To deliver competitive solutions in such a complex industry, these three levels need to interact and integrate smoothly and seamlessly from the earliest stages of the process.
 
@@ -68,15 +68,14 @@ Meanwhile, engineering departments need timely input from the management to leve
 
 Different types of requirements need to be considered simultaneously starting from the early stages of design in order to deliver a competitive solution at the right moment.
 
-The Solution  {.a-badge .a-badge--primary .a-badge--m .a-badge--blog}
-## A tailored Business Decision Support System (BDSS) based on Cardanit {.no-top-space}
+## The Solution 
+## A tailored Business Decision Support System (BDSS) based on Cardanit
 
 As mentioned above, the decision-making process in the composite material design happens at three levels: business, engineering, and simulation.
 
-![Cardanit worflow for Composelector](/assets/img/blog/Cardanit-workflow-Composelector.png)&nbsp;
 <Image
         src="/images/Cardanit-workflow-Composelector.png"
-        alt="Picture of the author"
+        alt="Cardanit worflow for Composelector"
         width={500}
         height={500}
       />
@@ -99,9 +98,8 @@ In the BDSS business processes are modeled using the Business Process Model and 
 
 The availability of a single, interdisciplinary business process and decision workflow leads to better risk assessment, seamless knowledge sharing, cost reduction, and finally, increased design quality.
 
-How we did it{.a-badge .a-badge--primary .a-badge--m .a-badge--blog} 
-## Collaboration is key: breaking silos with Cardanit collaboration features {.no-top-space}
-
+## How we did it 
+## Collaboration is key: breaking silos with Cardanit collaboration features 
 In the preliminary development phase, we used Cardanit to model the business and decision processes underlying three application cases coming from the project’s industrial partners.
 
 Starting from textual descriptions of processes we created hierarchical top-down BPMN models. We adopted an iterative approach. Each iteration added details to the model and helped in building a shared understanding of the process.
@@ -118,9 +116,8 @@ The BPMN models obtained with this iterative process collect all the knowledge a
 
 In some cases, this knowledge was spread between different people in the industrial partner organization. Cardanit fostered conversations centered on BPMN models between those people too.
 
-Take out points{.a-badge .a-badge--primary .a-badge--m .a-badge--blog}  
-## Real-life application cases at the heart of COMPOSELECTOR {.no-top-space}
-
+## Take out points 
+## Real-life application cases at the heart of COMPOSELECTOR 
 Three real-life application cases guided the development of COMPOSELECTOR - material and process selection of fuselage thermoplastic frame (Airbus), material and process selection of a leaf-spring (Dow), material and process selection of passenger tire platform with fixed carcass (Goodyear).
 
 The three cases, coming from the three industrial partners of the COMPOSELECTOR project are different enough to make the proposed BDSS applicable for a wide range of decision processes in the field of composite material design.

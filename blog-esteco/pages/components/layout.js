@@ -1,11 +1,11 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from './layout.module.css'
-import utilStyles from '../../styles/utils.module.css'
-import Link from 'next/link'
+import Head from "next/head";
+import Image from "next/image";
+import styles from "./layout.module.css";
+import utilStyles from "../../styles/utils.module.css";
+import Link from "next/link";
 
-const name = 'Esteco Blog'
-export const siteTitle = 'Esteco blog'
+const name = "Esteco Blog";
+export const siteTitle = "Esteco Blog";
 
 export default function Layout({ children, home }) {
   return (
@@ -27,16 +27,16 @@ export default function Layout({ children, home }) {
       </Head>
       <header className={styles.header}>
         {home ? (
-          <>           
+          <>
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
         ) : (
           <>
-           
             <h2 className={utilStyles.headingLg}>
               <Link href="/">
                 <a className={utilStyles.colorInherit}>{name}</a>
               </Link>
+              
             </h2>
           </>
         )}
@@ -44,11 +44,11 @@ export default function Layout({ children, home }) {
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
-          <Link href="/">
+          <Link href="/blog">
             <a>← Back to home</a>
           </Link>
         </div>
       )}
     </div>
-  )
+  );
 }

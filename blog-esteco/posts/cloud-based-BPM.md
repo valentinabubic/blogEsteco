@@ -3,7 +3,7 @@ layout: blog_layout.njk
 writtenBy: 'Nela Lazarevic'
 author: 'Nela Lazarevic'
 authorBio: 'With a background in journalism, Nela Lazarevic works as a Communications Specialist at ESTECO, the mother company of Cardanit.'
-authorAvatar: '/assets/img/blog/lazarevic.jpg'
+authorAvatar: '/images/lazarevic.jpg'
 title: "Cloud-based BPM and the new normal: collaborative process modeling in the era of remote work"
 date: '2020-11-17'
 seoTitle: 'Cloud-based BPM and the new normal: collaborative process modeling in the era of remote work'
@@ -11,6 +11,7 @@ seoDescription: 'With remote work skyrocketing to unprecedented levels across th
 seoImage: '/assets/img/blog/Cardanit-image-collaboration-blog.jpg'
 sitemap:
     changefreq: weekly
+
 ---
 
 <Image
@@ -55,14 +56,13 @@ First, we set up a remote **collaborative modeling session** with our **BPMN exp
 
 After a couple of procedures modeled this way, the Accounting and People Operations department started working on other process models independently, interacting with the BPMN expert only for feedback and to explore more **advanced BPMN concepts**. In just a few weeks, all the most important **procedures** were successfully **modeled**.
 
-![Cardanit BPMN diagram for medical visit](/assets/img/blog/Company-medical-visit.jpg)
 <Image
         src="/images/Company-medical-visit.jpg"
         alt="Cardanit BPMN diagram for medical visit"
         width={500}
         height={500}
       />
-Image: Company medical visit modeled in Cardanit{.a-label .a-label--reduced .soul-space-stack-bottom-m}
+
 
 Thanks to Cardanit, they now have **BPMN models** as reference **documentation** for all their **processes**. This information is easy to understand even for the new hires.
 
@@ -73,7 +73,7 @@ Thanks to Cardanit, they now have **BPMN models** as reference **documentation**
         width={500}
         height={500}
       />
-Image: Interns onboarding modeled in Cardanit{.a-label .a-label--reduced .soul-space-stack-bottom-m}
+
 
 ## The power of a cloud-based BPMN editor
 As we’ve seen in the example above, a user-friendly, cloud-based **BPMN/[DMN editor](/blog/combining-decision-and-process-modeling)** is an efficiency booster for any organization that needs to quickly adapt to today’s challenges. The ability to quickly and painlessly train company staff to model their own **business processes** is priceless. But it’s also an invaluable tool for **business analysts** modeling processes for large organizations and for **business consulting firms** that juggle multiple **BPM projects** at any given moment. 
