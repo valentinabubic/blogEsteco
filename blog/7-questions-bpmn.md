@@ -15,7 +15,7 @@ seoDescription: 'Business Process Modeling and Notation explained  in seven easy
 seoImage: '/assets/img/blog/BPM-Life-cycle.png'
 sitemap:
 changefreq: weekly
-
+teaser: 'As you landed on this page, chances are you already know what Business Process Modeling and Notation is. In this post we focus on modeling with BPMN for two main reasons: BPMN is good for modeling and enables other steps and techniques of the BPM cycle. We’d also like to show you how working with this standard may help you analyze processes more efficiently with the use of the Cardanit editor.'
 ---
 
 1\. Why BPMN modeling?

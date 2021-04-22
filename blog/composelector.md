@@ -10,6 +10,7 @@ and decisions underlying the industrial application cases.'
 authorAvatar: '/images/Dario-Campagna-profile-picture.jpg'
 layout: blog_layout.njk
 title: "Embracing BPMN and DMN for better informed decisions in the composite materials design"
+teaser: 'Cardanit’s collaborative features, user-friendly interface, and compliance with the BPMN 2.0 and DMN standards helped develop an innovative approach to composite design and manufacturing process, enhancing informed decision-making across departments. Here’s how Cardanit helped tackle this daunting task effectively in the framework of the EU-funded project COMPOSELECTOR.'
 tag: "Success story"
 date: '2020-04-07'
 seoTitle: 'Embracing BPMN and DMN | Better-informed decisions in design'

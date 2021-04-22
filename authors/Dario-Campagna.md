@@ -1,7 +1,6 @@
 ---
 author: 'Dario Campagna'
 authorAvatar: '/images/Dario-Campagna-profile-picture.jpg'
-
 ---
 Dario Campagna is Senior Researcher and Agile Coach at ESTECO SpA. He received his Master Degree in Computer Science
 in 2008 from the University of Udine, Italy. In 2012 he got his PhD in Computer Science from the University of Perugia, Italy. 

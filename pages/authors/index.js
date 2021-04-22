@@ -2,21 +2,19 @@ import Head from "next/head";
 import Layout, { siteTitle } from "../../components/layout";
 import utilStyles from "../../components/layout";
 import Link from "next/link";
-import { getSortedBlogData } from "../../lib/posts";
-import Date from "../../components/date";
-import Image from "next/image";
-import PostPreview from "../../components/post-preview";
+import { getSortedAuthorsData } from "../../lib/authors";
 
+import AuthorsPreview from '../../components/authors-preview';
 export async function getStaticProps() {
-  const allBlogData = getSortedBlogData();
+  const allAuthorsData = getSortedAuthorsData();
 
   return {
     props: {
-      allBlogData,
+      allAuthorsData,
     },
   };
 }
-export default function Home({ allBlogData }) {
+export default function Home({ allAuthorsData }) {
   return (
     <Layout>
       <Head>
@@ -29,13 +27,12 @@ export default function Home({ allBlogData }) {
       <section className={utilStyles.headingMd}>
         <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
           <ul className={utilStyles.list}>
-            {allBlogData.map(({ id, date, title, author, teaser }) => (
-              <PostPreview //faccio il map del componente e gli passo i props? che lui userà per stampare il contenuto
+            {allAuthorsData.map(({ id, author, authorAvatar }) => (
+              <AuthorsPreview //faccio il map del componente e gli passo i props? che lui userà per stampare il contenuto
                 id={id}
-                date={date}
-                title={title}
+                authorAvatar={authorAvatar}
                 author={author}
-                teaser={teaser}
+
               />
             ))}
           </ul>

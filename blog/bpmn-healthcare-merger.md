@@ -15,6 +15,7 @@ cardSubTitle: ''
 cardImage: '/assets/img/blog/EUC_Premium_logo.jpg'
 cardImageAlt: 'BPMN healthcare merger: EUC Health Group logo'
 cardDescription: 'The EUC Health Group is the largest network of outpatient clinics in the Czech Republic. They provide care to two million patients a year and operate in 29 medical facilities across the Czech Republic. Canadian Medical operates four clinics in Prague, EUC Premium has three clinics and one premium care hospital in Prague and one clinic in Brno.'
+teaser: 'Business Process Modeling and Notation is quite a simple standard. People who are not familiar with BPMN elements may also need a description of the diagram of the model implemented during the process analysis. This is why business consultants and analysts tend to share a more readable ‘user manual’, which Cardanit produces at the click of a button, when presenting the results of their work.'
 sitemap:
     changefreq: weekly
 ---

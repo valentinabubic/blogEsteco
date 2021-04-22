@@ -23,8 +23,8 @@ export default function Authors({ authorsData }) {
           />
         </p>
         <h2>{authorsData.author}</h2>
+        <div dangerouslySetInnerHTML={{ __html: authorsData.contentHtml }} />
 
-        <p>{authorsData.authorBio}</p>
         <br></br>
         <h3>Post dell'autore</h3>
         <ul>

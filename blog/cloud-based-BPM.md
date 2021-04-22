@@ -5,6 +5,7 @@ author: 'Nela Lazarevic'
 authorBio: 'With a background in journalism, Nela Lazarevic works as a Communications Specialist at ESTECO, the mother company of Cardanit.'
 authorAvatar: '/images/lazarevic.jpg'
 title: "Cloud-based BPM and the new normal: collaborative process modeling in the era of remote work"
+teaser: Getting all the stakeholders on board in a timely and efficient manner has always been at the heart of successful **business process modeling**. Whether internal or external, business users or peer **process modelers**, collecting input from relevant players from different departments or even different organizations has been part of the routine even before the pandemic set a new paradigm on how businesses operate.'
 date: '2020-11-17'
 seoTitle: 'Cloud-based BPM and the new normal: collaborative process modeling in the era of remote work'
 seoDescription: 'With remote work skyrocketing to unprecedented levels across the world, having formally defined processes through a widely used notation standard like BPMN has become more important than ever - it minimizes interpretation issues and sets the ground for automation, among other things.'
