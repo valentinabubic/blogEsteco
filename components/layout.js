@@ -8,7 +8,7 @@ import Link from 'next/link'
 const name = 'Esteco Blog'
 export const siteTitle = 'Esteco Blog'
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home, backUrl }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -44,11 +44,20 @@ export default function Layout({ children, home }) {
         )}
       </header>
       <main>{children}</main>
-      <div className={styles.backToHome}>
-          <Link href="/blog">
+      { backUrl ? 
+        (
+          <>
+          <div className={styles.backToHome}>
+          <Link href={backUrl}>
             <a>← Back</a>
           </Link>
         </div>
+            </>) : (
+            <>
+            </>
+            )
+      }
+      
     </div>
   )
 }

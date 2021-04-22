@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function Post({ blogData }) {
   return (
-    <Layout>
+    <Layout backUrl={`/blog`}>
       <Head>
         <title>{blogData.title}</title>
       </Head>

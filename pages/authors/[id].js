@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function Authors({ authorsData }) {
   return (
-    <Layout>
+    <Layout backUrl={`/authors`}>
       <Head>
         <title>{authorsData.author}</title>
       </Head>
@@ -29,7 +29,7 @@ export default function Authors({ authorsData }) {
         <h3>Post dell'autore</h3>
         <ul>
           <li key={authorsData.id}>
-            <Link href={`/posts/`}>
+            <Link href={`/blog/`}>
               <a>{authorsData.title}</a>
             </Link>
           </li>
