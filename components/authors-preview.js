@@ -1,17 +1,26 @@
 import utilStyles from "./layout";
 import Link from "next/link";
+import Image from "next/image";
 import Date from "./date";
-import styles from '../components/layout.module.css'
+import styles from "../components/layout.module.css";
 export default function AuthorsPreview({ id, author, authorAvatar }) {
-
   return (
     <styles>
       <li className={utilStyles.listItem} key={id}>
-
+      <Image
+            src={authorAvatar}
+            alt={authorAvatar}
+            width={100}
+            height={100}
+            layout="fixed"
+          />
+       <br></br>
         <Link href={`/authors/${id}`}>
           <a>{author}</a>
         </Link>
-        {/* aggiungi authorAvatar */}
+        <br></br>
+        <br></br>
+        <br></br>
       </li>
     </styles>
   );
