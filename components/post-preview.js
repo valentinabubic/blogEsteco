@@ -1,29 +1,28 @@
 import utilStyles from "../components/layout";
 import Link from "next/link";
 import Date from "../components/date";
-import styles from '../components/layout.module.css'
-export default function PostPreview({ id, date, title, author, teaser }) {
-  
-
+import styles from "../components/layout.module.css";
+export default function PostPreview({ id, date, title, authorsKey, teaser, author }) {
   return (
-      <styles>
-    <li className={utilStyles.listItem} key={id}>
-      <Date dateString={date} />
-      <br></br>
-      <Link href={`/blog/${id}`}>
-        <a>{title}</a>
-      </Link>
-      <br />
-      <small className={utilStyles.lightText}>
-          <Link href="/authors/[id]" as={`/authors/${author}`}>
-          {author}
-        </Link>
+    <styles>
+      <li className={utilStyles.listItem} key={id}>
+        <Date dateString={date} />
         <br></br>
-        <div className={utilStyles.summary}>{teaser}</div>
+        <Link href={`/blog/${id}`}>
+          <a>{title}</a>
+        </Link>
         <br />
-        <br />
-      </small>
-    </li>
+        <small className={utilStyles.lightText}>
+         <Link href={`/authors/${authorsKey}`}>
+           <a>{author}</a>
+         </Link>
+          
+          <br></br>
+          <div className={utilStyles.summary}>{teaser}</div>
+          <br />
+          <br />
+        </small>
+      </li>
     </styles>
   );
 }

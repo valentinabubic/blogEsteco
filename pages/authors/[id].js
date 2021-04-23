@@ -5,8 +5,28 @@ import utilStyles from "../../styles/utils.module.css";
 import Date from "../../components/date";
 import Image from "next/image";
 import Link from "next/link";
+import {getAuthorPosts} from '../../lib/posts'
 
-export default function Authors({ authorsData }) {
+export async function getStaticPaths() {
+  const paths = getAllAuthorsIds();
+  return {
+    paths,
+    fallback: false,
+  };
+}
+
+export async function getStaticProps({ params }) {
+  const authorsData = await getAuthorsData(params.id);
+  const authorPosts = await getAuthorPosts(authorsData.authorsKey)
+  return {
+    props: {
+      authorsData,
+      authorPosts,
+    },
+  };
+}
+
+export default function Authors({ authorsData, authorPosts }) {
   return (
     <Layout backUrl={`/authors`}>
       <Head>
@@ -27,31 +47,12 @@ export default function Authors({ authorsData }) {
 
         <br></br>
         <h3>Post dell'autore</h3>
-        <ul>
-          <li key={authorsData.id}>
-            <Link href={`/blog/`}>
-              <a>{authorsData.title}</a>
-            </Link>
-          </li>
-        </ul>
+        {authorPosts.map(({data})=>(
+          <p>{data.title}</p>
+        ))}
       </article>
     </Layout>
   );
 }
 
-export async function getStaticPaths() {
-  const paths = getAllAuthorsIds();
-  return {
-    paths,
-    fallback: false,
-  };
-}
 
-export async function getStaticProps({ params }) {
-  const authorsData = await getAuthorsData(params.id);
-  return {
-    props: {
-      authorsData,
-    },
-  };
-}

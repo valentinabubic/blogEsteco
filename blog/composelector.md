@@ -1,4 +1,5 @@
 ---
+authorsKey: 'Dario-Campagna'
 author: 'Dario Campagna'
 writtenBy: 'Dario Campagna'
 authorBio: 'Dario Campagna is Senior Researcher and Agile Coach at ESTECO SpA. He received his Master Degree in Computer Science
