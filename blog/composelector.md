@@ -1,14 +1,6 @@
 ---
 authorsKey: 'Dario-Campagna'
-author: 'Dario Campagna'
 writtenBy: 'Dario Campagna'
-authorBio: 'Dario Campagna is Senior Researcher and Agile Coach at ESTECO SpA. He received his Master Degree in Computer Science
-in 2008 from the University of Udine, Italy. In 2012 he got his PhD in Computer Science from the University of Perugia, Italy. 
-The same year he joined ESTECO. Dario contributes to research activities in the field of business process management. 
-He took part to both regional and European research projects. He is co-author of papers on business process management 
-and modelling. Since 2017 he’s involved in the COMPOSELECTOR H2020 project, where he contributes to the modeling of processes 
-and decisions underlying the industrial application cases.'
-authorAvatar: '/images/Dario-Campagna-profile-picture.jpg'
 layout: blog_layout.njk
 title: "Embracing BPMN and DMN for better informed decisions in the composite materials design"
 teaser: 'Cardanit’s collaborative features, user-friendly interface, and compliance with the BPMN 2.0 and DMN standards helped develop an innovative approach to composite design and manufacturing process, enhancing informed decision-making across departments. Here’s how Cardanit helped tackle this daunting task effectively in the framework of the EU-funded project COMPOSELECTOR.'

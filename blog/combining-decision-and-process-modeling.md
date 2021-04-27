@@ -1,12 +1,6 @@
 ---
 authorsKey: 'Alessandro-Turco'
-author: 'Alessandro Turco'
 writtenBy: 'Alessandro Turco'
-authorBio: 'Alessandro Turco has a PhD in Applied Math from the International School of Advanced Studies (SISSA) of Trieste
-and a Master in Management from the School of Management of Milan Polytechnic (MIP). 
-He has been working for ESTECO SpA for ten years, starting as a researcher for the Numerical Method Group. He is now the 
-project manager of Cardanit, the BPM solution from ESTECO.'
-authorAvatar: '/images/Alessandro-Turco.png' 
 layout: blog_layout.njk
 title: "How combining decision and process modeling can make business analysts’ life easier"
 teaser: 'Decisions are first-class objects, just like business processes or data, and should be identified, described, modeled, reviewed, and managed in business terms as part of a business architecture". Taken from the Decision Management Manifesto'
@@ -16,7 +10,7 @@ seoTitle: 'How combining decision and process modeling can make business analyst
 seoDescription: 'Decisions are first-class objects, just like business processes or data, and should be identified, described, modeled, reviewed, and managed in business terms as part of a business architecture'
 seoImage: '/assets/img/blog/DMN-elements-post.svg'
 sitemap:
-    changefreq: weekly
+changefreq: weekly
 ---
 
 "Decisions are first-class objects, just like business processes or data, and should be identified, described, modeled, reviewed, and managed in business terms as part of a business architecture". Taken from the Decision Management Manifesto

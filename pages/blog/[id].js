@@ -1,5 +1,6 @@
 import Layout from "../../components/layout";
 import { getAllBlogIds, getBlogData } from "../../lib/posts";
+import { getAuthorsData } from "../../lib/authors";
 import Head from "next/head";
 import utilStyles from "../../styles/utils.module.css";
 import Date from "../../components/date";
@@ -16,16 +17,16 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const blogData = await getBlogData(params.id);
- //const authorsData = await getAuthorsData(blogData.authorsKey);
+  const authorsData = await getAuthorsData(blogData.authorsKey);
   return {
     props: {
-        blogData,
-   //     authorsData,
+      blogData,
+      authorsData,
     },
   };
 }
 
-export default function Post({ blogData }) {
+export default function Post({ blogData, authorsData }) {
   return (
     <Layout backUrl={`/blog`}>
       <Head>
@@ -40,7 +41,7 @@ export default function Post({ blogData }) {
 
         <br />
         <div dangerouslySetInnerHTML={{ __html: blogData.contentHtml }} />
-       
+
         <p>
           <Image
             src={authorsData.authorAvatar}
@@ -51,10 +52,11 @@ export default function Post({ blogData }) {
           />
         </p>
 
-        <Link href="/authors" /*as={`/authors/${id}`}*/>{blogData.author}</Link>
-        <p>{authorsData.authorBio}</p>
+        <Link href="/authors" /*as={`/authors/${id}`}*/>
+          {authorsData.author}
+        </Link>
+        <div dangerouslySetInnerHTML={{ __html: authorsData.contentHtml }} />
       </article>
     </Layout>
   );
 }
-

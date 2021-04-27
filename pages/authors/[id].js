@@ -26,7 +26,7 @@ export async function getStaticProps({ params }) {
   };
 }
 
-export default function Authors({ authorsData, authorPosts }) {
+export default function Authors({ authorsData, authorPosts,id }) {
   return (
     <Layout backUrl={`/authors`}>
       <Head>
@@ -48,7 +48,10 @@ export default function Authors({ authorsData, authorPosts }) {
         <br></br>
         <h3>Post dell'autore</h3>
         {authorPosts.map(({data})=>(
-          <p>{data.title}</p>
+          <Link href={`/blog/${id}`}>
+          <a>{data.title}</a>
+          </Link>
+          
         ))}
       </article>
     </Layout>

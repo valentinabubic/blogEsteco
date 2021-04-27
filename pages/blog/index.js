@@ -29,13 +29,13 @@ export default function Home({ allBlogData }) {
       <section className={utilStyles.headingMd}>
         <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
           <ul className={utilStyles.list}>
-            {allBlogData.map(({ id, date, title, authorsKey, teaser,author }) => (
+            {allBlogData.map(({ id, date, title, authorsKey, teaser,writtenBy }) => (
               <PostPreview //faccio il map del componente e gli passo i props? che lui userà per stampare il contenuto
                 id={id}
                 date={date}
                 title={title}
                 authorsKey={authorsKey}
-                author={author}
+                writtenBy={writtenBy}
                 teaser={teaser}
               />
             ))}
