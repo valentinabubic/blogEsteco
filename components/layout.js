@@ -1,18 +1,16 @@
 //componente per il layout di tutte le pagine e in posts
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
-import Link from 'next/link'
+import Head from "next/head";
+import styles from "./layout.module.css";
+import utilStyles from "../styles/utils.module.css";
+import Link from "next/link";
 
-const name = 'Esteco Blog'
-export const siteTitle = 'Esteco Blog'
+const name = "Esteco Blog";
+export const siteTitle = "Esteco Blog";
 
 export default function Layout({ children, home, backUrl }) {
   return (
     <div className={styles.container}>
       <Head>
-        
         <meta
           name="description"
           content="Learn how to build a personal website using Next.js"
@@ -29,12 +27,10 @@ export default function Layout({ children, home, backUrl }) {
       <header className={styles.header}>
         {home ? (
           <>
-           
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
         ) : (
           <>
-          
             <h2 className={utilStyles.headingLg}>
               <Link href="/">
                 <a className={utilStyles.colorInherit}>{name}</a>
@@ -44,20 +40,17 @@ export default function Layout({ children, home, backUrl }) {
         )}
       </header>
       <main>{children}</main>
-      { backUrl ? 
-        (
-          <>
+      {backUrl ? (
+        <>
           <div className={styles.backToHome}>
-          <Link href={backUrl}>
-            <a>← Back</a>
-          </Link>
-        </div>
-            </>) : (
-            <>
-            </>
-            )
-      }
-      
+            <Link href={backUrl}>
+              <a>← Back</a>
+            </Link>
+          </div>
+        </>
+      ) : (
+        <></>
+      )}
     </div>
-  )
+  );
 }

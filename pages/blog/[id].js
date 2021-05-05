@@ -38,10 +38,8 @@ export default function Post({ blogData, authorsData }) {
           <Date dateString={blogData.date} />
           <p>{authorsData.author}</p>
         </div>
-
         <br />
         <div dangerouslySetInnerHTML={{ __html: blogData.contentHtml }} />
-
         <p>
           <Image
             src={authorsData.authorAvatar}
