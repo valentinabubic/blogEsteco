@@ -6,7 +6,6 @@ import utilStyles from "../../styles/utils.module.css";
 import Date from "../../components/date";
 import Image from "next/image";
 import Link from "next/link";
-
 export async function getStaticPaths() {
   const paths = getAllBlogIds();
   return {
@@ -17,7 +16,13 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const blogData = await getBlogData(params.id);
-  const authorsData = await getAuthorsData(blogData.authorsKey);
+  let authorsData = [];
+  await Promise.all(
+    blogData.authorsKey.map(async (author) => {
+      authorsData.push(await getAuthorsData(author));
+      return authorsData;
+    })
+  );
   return {
     props: {
       blogData,
@@ -36,24 +41,33 @@ export default function Post({ blogData, authorsData }) {
         <h1 className={utilStyles.headingXl}>{blogData.title}</h1>
         <div className={utilStyles.lightText}>
           <Date dateString={blogData.date} />
-          <p>{authorsData.author}</p>
-        </div>
-        <br />
-        <div dangerouslySetInnerHTML={{ __html: blogData.contentHtml }} />
-        <p>
-          <Image
-            src={authorsData.authorAvatar}
-            alt={authorsData.authorAvatar}
-            width={100}
-            height={100}
-            layout="fixed"
-          />
-        </p>
+          {authorsData.map((data, index) => (
+            <div key={index}>
+              {data.author}
+            </div>
+          ))}
 
-        <Link href="/authors" /*as={`/authors/${id}`}*/>
-          {authorsData.author}
-        </Link>
-        <div dangerouslySetInnerHTML={{ __html: authorsData.contentHtml }} />
+          <br />
+          <div dangerouslySetInnerHTML={{ __html: blogData.contentHtml }} />
+          <p>
+            {authorsData.map((data, index) => (
+            <div key={index}>
+              {<Image
+              src={data.authorAvatar}
+              alt={data.authorAvatar}
+              width={100}
+              height={100}
+              layout="fixed"
+            />}
+            {<Link href="/authors" /*as={`/authors/${id}`}*/>
+          {data.author}
+        </Link>} 
+        {<div dangerouslySetInnerHTML={{ __html: data.contentHtml }} />}
+            </div>
+          ))}
+          </p>
+        </div>
+        
       </article>
     </Layout>
   );

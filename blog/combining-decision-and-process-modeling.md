@@ -1,5 +1,6 @@
 ---
-authorsKey: 'Alessandro-Turco'
+authorsKey: 
+  - Alessandro-Turco
 writtenBy: 'Alessandro Turco'
 layout: blog_layout.njk
 title: "How combining decision and process modeling can make business analysts’ life easier"

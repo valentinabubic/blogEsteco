@@ -1,5 +1,6 @@
 ---
-authorsKey: 'Michal-Breda'
+authorsKey: 
+  - Michal-Breda
 author: 'Michal Breda'
 authorAvatar: '/images/Breda_BPMN_specialist.png'
 ---

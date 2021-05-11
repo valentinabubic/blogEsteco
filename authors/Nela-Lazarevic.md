@@ -1,5 +1,6 @@
 ---
-authorsKey: 'Nela-Lazarevic'
+authorsKey: 
+  - Nela-Lazarevic
 author: 'Nela Lazarevic'
 authorAvatar: '/images/lazarevic.jpg'
 ---

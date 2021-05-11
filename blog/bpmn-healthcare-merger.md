@@ -1,5 +1,6 @@
 ---
-authorsKey: 'Michal-Breda'
+authorsKey: 
+  - Michal-Breda
 writtenBy: 'Michal Breda'
 layout: blog_layout.njk
 title: "Cardanit BPMN editor becomes the key solution for companies’ merger"

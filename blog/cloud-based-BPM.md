@@ -1,5 +1,6 @@
 ---
-authorsKey: 'Nela-Lazarevic'
+authorsKey: 
+  - Nela-Lazarevic
 layout: blog_layout.njk
 writtenBy: 'Nela Lazarevic'
 title: "Cloud-based BPM and the new normal: collaborative process modeling in the era of remote work"

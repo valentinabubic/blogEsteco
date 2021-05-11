@@ -1,5 +1,6 @@
 ---
-authorsKey: 'Dario-Campagna'
+authorsKey: 
+  - Dario-Campagna
 author: 'Dario Campagna'
 authorAvatar: '/images/Dario-Campagna-profile-picture.jpg'
 ---

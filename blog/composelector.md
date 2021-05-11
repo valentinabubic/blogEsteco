@@ -1,5 +1,6 @@
 ---
-authorsKey: 'Dario-Campagna'
+authorsKey: 
+  - Dario-Campagna
 writtenBy: 'Dario Campagna'
 layout: blog_layout.njk
 title: "Embracing BPMN and DMN for better informed decisions in the composite materials design"
