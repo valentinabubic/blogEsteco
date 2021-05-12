@@ -6,6 +6,7 @@ import utilStyles from "../../styles/utils.module.css";
 import Date from "../../components/date";
 import Image from "next/image";
 import Link from "next/link";
+
 export async function getStaticPaths() {
   const paths = getAllBlogIds();
   return {

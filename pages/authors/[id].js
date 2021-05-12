@@ -4,6 +4,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { getAuthorPosts } from "../../lib/posts";
+
 export async function getStaticPaths() {
   const paths = getAllAuthorsIds();
   return {
@@ -14,14 +15,14 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const authorsData = await getAuthorsData(params.id);
-  
   let authorPosts = [];
   await Promise.all(
-    authorsData.authorsKey.map(async (author) => {
+    authorsData.authorsKey.map(async (author)=>{
       authorPosts.push(await getAuthorsData(author));
       return authorPosts;
     })
   );
+  
   return {
     props: {
       authorsData,
@@ -53,12 +54,11 @@ export default function Authors({ authorsData, authorPosts, id }) {
         <h3>Post dell'autore</h3>
         <li>
           {" "}
-          <Link href={`/blog/${id}`}>
-              <a>{authorsData.title}</a>
+          {authorPosts.map(({ data }) => (
+            <Link href={`/blog/${id}`}>
+              <a>{data.title}</a>
             </Link>
-          {/* {authorPosts.map(({ data }) => (
-            
-          ))} */}
+          ))}
         </li>
         <br />
       </article>
