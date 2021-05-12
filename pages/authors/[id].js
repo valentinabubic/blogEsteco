@@ -53,11 +53,12 @@ export default function Authors({ authorsData, authorPosts, id }) {
         <h3>Post dell'autore</h3>
         <li>
           {" "}
-          {authorPosts.map(({ data }) => (
-            <Link href={`/blog/${id}`}>
-              <a>{data.title}</a>
+          <Link href={`/blog/${id}`}>
+              <a>{authorsData.title}</a>
             </Link>
-          ))}
+          {/* {authorPosts.map(({ data }) => (
+            
+          ))} */}
         </li>
         <br />
       </article>

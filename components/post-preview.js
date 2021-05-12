@@ -2,6 +2,9 @@ import utilStyles from "../components/layout";
 import Link from "next/link";
 import Date from "../components/date";
 import styles from "../components/layout.module.css";
+import { getAllBlogIds, getBlogData } from "../lib/posts";
+
+
 export default function PostPreview({
   id,
   date,
@@ -21,8 +24,10 @@ export default function PostPreview({
         <br />
         <small className={utilStyles.lightText}>
           <Link href={`/authors/${authorsKey}`}>
-            <a>{writtenBy}</a>
+            <a>{authorsKey}</a>
           </Link>
+         
+          
 
           <br></br>
           <div className={utilStyles.summary}>{teaser}</div>
