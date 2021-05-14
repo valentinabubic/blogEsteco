@@ -25,8 +25,9 @@ export default function Home({ allBlogData }) {
         <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
           <ul className={utilStyles.list}>
             {allBlogData.map(
-              ({ id, date, title, authorsKey, teaser, writtenBy }) => (
+              ({ id, date, title, authorsKey, teaser, writtenBy, index}) => (
                 <PostPreview
+                key={index}
                   id={id}
                   date={date}
                   title={title}

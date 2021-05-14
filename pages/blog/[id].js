@@ -43,32 +43,33 @@ export default function Post({ blogData, authorsData }) {
         <div className={utilStyles.lightText}>
           <Date dateString={blogData.date} />
           {authorsData.map((data, index) => (
-            <div key={index}>
-              {data.author}
-            </div>
+            <div key={index}>{data.author}</div>
           ))}
 
           <br />
           <div dangerouslySetInnerHTML={{ __html: blogData.contentHtml }} />
           <p>
             {authorsData.map((data, index) => (
-            <div key={index}>
-              {<Image
-              src={data.authorAvatar}
-              alt={data.authorAvatar}
-              width={100}
-              height={100}
-              layout="fixed"
-            />}
-            {<Link href="/authors" /*as={`/authors/${id}`}*/>
-          {data.author}
-        </Link>} 
-        {<div dangerouslySetInnerHTML={{ __html: data.contentHtml }} />}
-            </div>
-          ))}
+              <div key={index}>
+                {
+                  <Image
+                    src={data.authorAvatar}
+                    alt={data.authorAvatar}
+                    width={100}
+                    height={100}
+                    layout="fixed"
+                  />
+                }
+                {
+                  <Link href="/authors" /*as={`/authors/${id}`}*/>
+                    {data.author}
+                  </Link>
+                }
+                {<div dangerouslySetInnerHTML={{ __html: data.contentHtml }} />}
+              </div>
+            ))}
           </p>
         </div>
-        
       </article>
     </Layout>
   );

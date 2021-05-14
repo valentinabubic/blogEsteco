@@ -16,13 +16,14 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const authorsData = await getAuthorsData(params.id);
   let authorPosts = [];
+
   await Promise.all(
-    authorsData.authorsKey.map(async (author)=>{
-      authorPosts.push(await getAuthorsData(author));
+    authorsData.authorsKey.map(async (author) => {
+      authorPosts = await getAuthorPosts(author);
       return authorPosts;
     })
   );
-  
+
   return {
     props: {
       authorsData,
@@ -38,28 +39,29 @@ export default function Authors({ authorsData, authorPosts, id }) {
         <title>{authorsData.author}</title>
       </Head>
       <article>
-        <p>
-          <Image
+        <span>
+          <div><Image
             src={authorsData.authorAvatar}
             alt={authorsData.authorAvatar}
             width={100}
             height={100}
             layout="fixed"
           />
-        </p>
+        </div></span>
         <h2>{authorsData.author}</h2>
         <div dangerouslySetInnerHTML={{ __html: authorsData.contentHtml }} />
 
         <br></br>
         <h3>Post dell'autore</h3>
-        <li>
-          {" "}
-          {authorPosts.map(({ data }) => (
-            <Link href={`/blog/${id}`}>
-              <a>{data.title}</a>
-            </Link>
+        <ul>
+          {authorPosts.map((data, index) => (
+            <li key={index}>
+              <Link href={`/blog/${id}`}>
+                <a>{data.title}</a>
+              </Link>
+            </li>
           ))}
-        </li>
+        </ul>
         <br />
       </article>
     </Layout>
