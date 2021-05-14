@@ -4,13 +4,14 @@ import Date from "../components/date";
 import styles from "../components/layout.module.css";
 import { getAllBlogIds, getBlogData } from "../lib/posts";
 
+
 export default function PostPreview({
   id,
   date,
   title,
   authorsKey,
   teaser,
-  writtenBy,
+  authorsData
 }) {
   return (
     <styles>
@@ -22,10 +23,11 @@ export default function PostPreview({
         </Link>
         <br />
         <small className={utilStyles.lightText}>
+
+         {authorsKey.map((author, index) => <Link href={`/authors/${author}`} key={index}>
+            <a>{author} </a> 
+          </Link>) }
           
-          <Link href={`/authors/${authorsKey}`}>
-            <a>{authorsKey}</a>
-          </Link>
 
           <br></br>
           <div className={utilStyles.summary}>{teaser}</div>

@@ -2,7 +2,7 @@
 authorsKey:
   - Alessandro-Turco
   - Michal-Breda
-writtenBy: 'Alessandro Turco, MichalBreda'
+writtenBy: 'Alessandro Turco, Michal Breda'
 layout: blog_layout.njk
 title: "7 questions every business analyst asks about BPMN"
 tag: "The BPMN standard"
