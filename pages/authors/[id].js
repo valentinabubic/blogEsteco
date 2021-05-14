@@ -53,11 +53,11 @@ export default function Authors({ authorsData, authorPosts, id }) {
 
         <br></br>
         <h3>Post dell'autore</h3>
-        {console.log(authorPosts)}
+     
         <ul>
           {authorPosts.map((post, index) => (
             <li key={index}>
-              <Link href={`/blog/${id}`}>
+              <Link href={`/blog/${post.postId}`}>
                 <a>{post.data.title}</a>
               </Link>
             </li>
