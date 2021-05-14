@@ -49,6 +49,7 @@ export default function Post({ blogData, authorsData }) {
           <br />
           <div dangerouslySetInnerHTML={{ __html: blogData.contentHtml }} />
           <p>
+            
             {authorsData.map((data, index) => (
               <div key={index}>
                 {
@@ -60,8 +61,9 @@ export default function Post({ blogData, authorsData }) {
                     layout="fixed"
                   />
                 }
+
                 {
-                  <Link href="/authors" /*as={`/authors/${id}`}*/>
+                  <Link href={`/authors/${data.authorsKey[0]}`}>
                     {data.author}
                   </Link>
                 }
