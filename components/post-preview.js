@@ -25,7 +25,7 @@ export default function PostPreview({
         <small className={utilStyles.lightText}>
 
          {authorsKey.map((author, index) => <Link href={`/authors/${author}`} key={index}>
-            <a>{author} </a> 
+            <a>{author.replace('-', ' ')} </a> 
           </Link>) }
           
 
