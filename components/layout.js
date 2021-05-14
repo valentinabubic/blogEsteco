@@ -44,7 +44,7 @@ export default function Layout({ children, home, backUrl }) {
         <>
           <div className={styles.backToHome}>
             <Link href={backUrl}>
-              <a>← Back</a>
+              <a>← Home</a>
             </Link>
           </div>
         </>
