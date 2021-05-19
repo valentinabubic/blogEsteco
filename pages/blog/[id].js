@@ -47,26 +47,53 @@ export default function Post({ blogData, authorsData }) {
 
           <br />
           <div dangerouslySetInnerHTML={{ __html: blogData.contentHtml }} />
+          <br></br>
+          <br></br>
+          <br></br>
           <p>
             {authorsData.map((data, index) => (
               <div key={index}>
-                {
-                  <Image
-                    src={data.authorAvatar}
-                    alt={data.authorAvatar}
-                    width={100}
-                    height={100}
-                    layout="fixed"
-                  />
-                }
+                <div class="soul-grid  soul-grid--horizontal soul-grid--vertical-on-xs">
+  <div class="soul-grid-item-1/4-span"><div></div></div>
+  <div class="soul-grid-item-1/2-span"><div><div class="soul-card soul-card--flat soul-card--regular">
+                  <div class="soul-card__header">
+                    <div class="soul-card__header-content">
+                      <div class="soul-card__media">
+                        <img
+                          src={data.authorAvatar}
+                          width="20%"
+                          alt={data.authorAvatar}
+                        />
+                      </div>
+                      <h1 class="soul-font-size-l h-text-bold h-text-align-center">
+                        <Link href={`/authors/${data.authorsKey[0]}`}>
+                          {data.author}
+                        </Link>
+                      </h1>
+                    </div>
+                  </div>
 
-                {
-                  <Link href={`/authors/${data.authorsKey[0]}`}>
-                    {data.author}
-                  </Link>
-                }
-                {<div dangerouslySetInnerHTML={{ __html: data.contentHtml }} />}
-              </div>
+                  <div class="soul-card__content">
+                    <div class="soul-content soul-font-scale-s">
+                      <p>
+                        {" "}
+                        {
+                          <div
+                            dangerouslySetInnerHTML={{
+                              __html: data.contentHtml,
+                            }}
+                          />
+                        }
+                      </p>
+                    </div>
+                  </div>
+                </div>  </div></div>
+  <div class="soul-grid-item-1/4-span"><div></div></div>
+
+                
+                <br></br>
+                
+              </div></div>
             ))}
           </p>
         </div>
