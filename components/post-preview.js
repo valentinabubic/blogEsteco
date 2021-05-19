@@ -16,7 +16,7 @@ export default function PostPreview({
 }) {
   return (
     <styles>
-  <div class="soul-grid  soul-grid--horizontal">
+  <div class="soul-grid  soul-grid--horizontal ">
   <div class="soul-grid-item-auto-span"><div></div></div>
   <div class="soul-grid-item-fill-span"><div><div class="soul-card soul-card--flat soul-card--comfortable" key={id}>
   <div class="soul-card__header">
@@ -31,7 +31,7 @@ export default function PostPreview({
           </Link>) }</h2>
     </div>
   </div>
-  <div class="soul-card__media"><img src={seoImage} width="15%" alt="" /></div>
+  <div class="soul-card__media"><img src={seoImage} width="75%" alt="" /></div>
   <div class="soul-card__content">
     <div class="soul-content soul-font-scale-s">
       <div className={utilStyles.summary}>{teaser}</div>

@@ -18,13 +18,13 @@ export default function Home({ allBlogData }) {
   return (
     <HomeLayout>
     <div>
-      <Head className="soul-content soul-font-scale-s">
+      <Head className="soul-content soul-font-scale-l">
         <title>{siteTitle}</title>
       </Head>
       <br></br>
 
-      <section className="soul-content soul-font-scale-s">
-        <div className="soul-grid  soul-grid--horizontal soul-grid--wrap soul-grid--justify-center">
+      <section className="soul-content soul-font-scale-l">
+        <div className="soul-grid  soul-grid--horizontal soul-grid--wrap soul-grid--justify-evenly">
           {allBlogData.map(
             ({
               id,
