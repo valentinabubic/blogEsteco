@@ -17,42 +17,41 @@ export async function getStaticProps() {
 export default function Home({ allBlogData }) {
   return (
     <HomeLayout>
-    <div>
-      <Head className="soul-content soul-font-scale-l">
-        <title>{siteTitle}</title>
-      </Head>
-      <br></br>
+      <div>
+        <Head className="soul-content soul-font-scale-l">
+          <title>{siteTitle}</title>
+        </Head>
+        <br></br>
 
-      <section className="soul-content soul-font-scale-l">
-        <div className="soul-grid  soul-grid--horizontal soul-grid--wrap soul-grid--justify-evenly">
-          {allBlogData.map(
-            ({
-              id,
-              date,
-              title,
-              authorsKey,
-              teaser,
-              writtenBy,
-              seoImage,
-              index,
-            }) => (
-              <div className="soul-grid-item-1/3-span">
-                <PostPreview
-                  key={index}
-                  id={id}
-                  date={date}
-                  title={title}
-                  authorsKey={authorsKey}
-                  writtenBy={writtenBy}
-                  teaser={teaser}
-                  seoImage={seoImage}
-                />
-              </div>
-            )
-          )}
-        </div>
-      </section>
-    </div>
+        <section className="soul-content soul-font-scale-l">
+          <div className="soul-grid  soul-grid--horizontal soul-grid--wrap soul-grid--justify-evenly">
+            {allBlogData.map(
+              ({
+                id,
+                date,
+                title,
+                authorsKey,
+                teaser,
+                writtenBy,
+                seoImage,
+              }) => (
+                <div className="soul-grid-item-1/3-span">
+                  <PostPreview
+                    key={id}
+                    id={id}
+                    date={date}
+                    title={title}
+                    authorsKey={authorsKey}
+                    writtenBy={writtenBy}
+                    teaser={teaser}
+                    seoImage={seoImage}
+                  />
+                </div>
+              )
+            )}
+          </div>
+        </section>
+      </div>
     </HomeLayout>
   );
 }

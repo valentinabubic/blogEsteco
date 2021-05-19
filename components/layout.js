@@ -8,7 +8,7 @@ export default function Layout({ children, home, backUrl }) {
   return (
     <div className="soul-content soul-font-scale-l">
       <div className="soul-grid  soul-grid--horizontal  soul-grid--justify-center">
-        <div class="soul-grid-item-1/2-span">
+        <div className="soul-grid-item-1/2-span">
           <div>
             <Head></Head>
             <header>
