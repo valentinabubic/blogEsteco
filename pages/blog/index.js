@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Layout, { siteTitle } from "../../components/layout";
+import HomeLayout, { siteTitle } from "../../components/homeLayout";
 
 import { getSortedBlogData } from "../../lib/posts";
 import PostPreview from "../../components/post-preview";
@@ -16,7 +16,8 @@ export async function getStaticProps() {
 
 export default function Home({ allBlogData }) {
   return (
-    <Layout>
+    <HomeLayout>
+    <div>
       <Head className="soul-content soul-font-scale-s">
         <title>{siteTitle}</title>
       </Head>
@@ -51,6 +52,7 @@ export default function Home({ allBlogData }) {
           )}
         </div>
       </section>
-    </Layout>
+    </div>
+    </HomeLayout>
   );
 }
