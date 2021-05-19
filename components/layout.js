@@ -18,7 +18,7 @@ export default function Layout({ children, home, backUrl }) {
                 </>
               ) : (
                 <>
-                  <h2>
+                  <h2 className="h-text-align-center">
                     <Link href="/blog">
                       <a>{name}</a>
                     </Link>

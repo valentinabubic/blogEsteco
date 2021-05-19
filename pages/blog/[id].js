@@ -2,7 +2,6 @@ import Layout from "../../components/layout";
 import { getAllBlogIds, getBlogData } from "../../lib/posts";
 import { getAuthorsData } from "../../lib/authors";
 import Head from "next/head";
-import utilStyles from "../../styles/utils.module.css";
 import Date from "../../components/date";
 import Image from "next/image";
 import Link from "next/link";
@@ -39,8 +38,8 @@ export default function Post({ blogData, authorsData }) {
         <title>{blogData.title}</title>
       </Head>
       <article>
-        <h1 className={utilStyles.headingXl}>{blogData.title}</h1>
-        <div className={utilStyles.lightText}>
+        <h1>{blogData.title}</h1>
+        <div>
           <Date dateString={blogData.date} />
           {authorsData.map((data, index) => (
             <div key={index}>{data.author}</div>
@@ -49,7 +48,6 @@ export default function Post({ blogData, authorsData }) {
           <br />
           <div dangerouslySetInnerHTML={{ __html: blogData.contentHtml }} />
           <p>
-            
             {authorsData.map((data, index) => (
               <div key={index}>
                 {

@@ -1,11 +1,15 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default function AuthorsPreview({ id, author, authorAvatar }) {
+export default function AuthorsPreview({ 
+  id, 
+  author, 
+  authorAvatar
+ }) {
   return (
-    <div className="soul-content soul-font-scale-l">
+    
       <div className="soul-grid  soul-grid--horizontal  ">
-        <div className="soul-grid-item-1/3-span">
+        <div className="soul-grid-item-1/4-span">
           <div>
             <div className="soul-card soul-card--flat soul-card--comfortable">
               <div className="soul-card__header">
@@ -19,12 +23,12 @@ export default function AuthorsPreview({ id, author, authorAvatar }) {
                 </div>
               </div>
               <div className="soul-card__media">
-                <img src={authorAvatar} width="50%" alt={authorAvatar} />
+                <img src={authorAvatar} width="30%" alt={authorAvatar} />
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    
   );
 }
