@@ -50,7 +50,7 @@ As for the rest, they’ve managed to draw the **BPMN diagrams** for all their p
         height={500}
       />
 
-Image: New hire procedure modeled in Cardanit{.a-label .a-label--reduced .soul-space-stack-bottom-m}
+<span class="a-label  a-label--reduced soul-space-stack-bottom-m">Image: New hire procedure modeled in Cardanit</span>
 
 First, we set up a remote **collaborative modeling session** with our **BPMN expert** to introduce the basics of **Cardanit** and **BPMN**. Then our coworkers held a second session on their own to apply the acquired knowledge and design the first process diagram, without the BPMN expert. Finally, another session was held with the BPMN expert to check this model and transfer more knowledge about BPMN.
 

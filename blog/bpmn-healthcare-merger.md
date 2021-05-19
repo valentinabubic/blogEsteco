@@ -47,11 +47,11 @@ The deadline for the merger was 1 April 2021 and Cardanit enabled EUC Premium to
 * Work cooperatively in the description and implementation of the processes
 * Comprehensively transfer the entire process system of both companies to a new structure
 
-The context - Process identification {.a-badge .a-badge--primary .a-badge--m .a-badge--blog}
+<span class="a-badge  a-badge--primary a-badge--m a-badge--blog">The context - Process identification</span>
 
 In the middle of 2019, the management of EUC decided to describe all the processes in its subsidiary EUC Premium. About 180 processes have been identified as part of this project, most of which have been described by the end of 2019.
 
-The challenge - Process description {.a-badge .a-badge--primary .a-badge--m .a-badge--blog}
+ <span class="a-badge  a-badge--primary a-badge--m a-badge--blog">The challenge - Process description</span>
 
 In November, a merger of EUC Premium with another subsidiary, Canadian Medical was announced. It was necessary to describe the processes in this company and to start their integration as part of the merger. At the turn of the year, 80% of Canadian Medical processes were described. 
 
@@ -64,7 +64,7 @@ From January to the end of March 2020, they worked on **integrating the processe
         height={500}
       />
 
-The solution - Cardanit BPMN editor {.a-badge .a-badge--primary .a-badge--m .a-badge--blog}
+<span class="a-badge  a-badge--primary a-badge--m a-badge--blog">The solution - Cardanit BPMN editor</span>
 
 In Michal Breda’s words, “because we were able to **quickly and efficiently describe the processes** of both companies with the BPMN methodology in the Cardanit environment, it helped to manage the integration of the processes of both companies. These processes were partly different depending on the various information systems, and the graphical models helped all teams understand the processes of the other side and design a common integrated functional system.”
 
@@ -75,7 +75,7 @@ In Michal Breda’s words, “because we were able to **quickly and efficiently 
         height={500}
       />
 
-The benefits - Collaboration and report {.a-badge .a-badge--primary .a-badge--m .a-badge--blog}
+ <span class="a-badge  a-badge--primary a-badge--m a-badge--blog">The benefits - Collaboration and report</span>
 
 “During the merge phase, but also during my daily activities, I’ve found very useful all the collaboration features like the **internal chat** and the **share functionality** and most of all, the automated report.”, Michal continues describing his process modeling with Cardanit. 
 
