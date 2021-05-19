@@ -1,7 +1,5 @@
 //componente per il layout di tutte le pagine e in posts
 import Head from "next/head";
-import styles from "./layout.module.css";
-import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 
 const name = "Esteco Blog";
@@ -9,40 +7,29 @@ export const siteTitle = "Esteco Blog";
 
 export default function Layout({ children, home, backUrl }) {
   return (
-    <div className={styles.container}>
-      <Head>
-        <meta
-          name="description"
-          content="Learn how to build a personal website using Next.js"
-        />
-        <meta
-          property="og:image"
-          content={`https://og-image.vercel.app/${encodeURI(
-            siteTitle
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-        />
-        <meta name="og:title" content={siteTitle} />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-      <header className={styles.header}>
+    <div className="soul-content soul-font-scale-xl">
+      <Head></Head>
+      <header>
         {home ? (
           <>
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <h1>{name}</h1>
           </>
         ) : (
           <>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
+            <h2>
+              <Link href="/blog">
+                <a>{name}</a>
               </Link>
             </h2>
           </>
         )}
       </header>
-      <main>{children}</main>
+      <main className="soul-font-size-m">
+        {children}
+        </main>
       {backUrl ? (
         <>
-          <div className={styles.backToHome}>
+          <div className="a-button  a-button--primary">
             <Link href={backUrl}>
               <a>← Home</a>
             </Link>

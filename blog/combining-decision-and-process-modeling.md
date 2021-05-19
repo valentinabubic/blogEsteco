@@ -9,7 +9,7 @@ tag: "The DMN standard"
 date: '2020-04-07'
 seoTitle: 'How combining decision and process modeling can make business analysts’ life easier'
 seoDescription: 'Decisions are first-class objects, just like business processes or data, and should be identified, described, modeled, reviewed, and managed in business terms as part of a business architecture'
-seoImage: '/assets/img/blog/DMN-elements-post.svg'
+seoImage: '/images/DMN-elements-post.svg'
 sitemap:
 changefreq: weekly
 ---

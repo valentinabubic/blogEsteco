@@ -8,7 +8,7 @@ teaser: Getting all the stakeholders on board in a timely and efficient manner h
 date: '2020-11-17'
 seoTitle: 'Cloud-based BPM and the new normal: collaborative process modeling in the era of remote work'
 seoDescription: 'With remote work skyrocketing to unprecedented levels across the world, having formally defined processes through a widely used notation standard like BPMN has become more important than ever - it minimizes interpretation issues and sets the ground for automation, among other things.'
-seoImage: '/assets/img/blog/Cardanit-image-collaboration-blog.jpg'
+seoImage: '/images/Cardanit-image-collaboration-blog.jpg'
 sitemap:
 changefreq: weekly
 

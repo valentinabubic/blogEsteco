@@ -1,12 +1,12 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../../components/layout";
-import utilStyles from "../../components/layout";
+
 import { getSortedBlogData } from "../../lib/posts";
 import PostPreview from "../../components/post-preview";
 import { getAuthorsData } from "../../lib/authors";
 
 export async function getStaticProps() {
-  let allBlogData = getSortedBlogData(); 
+  let allBlogData = getSortedBlogData();
   return {
     props: {
       allBlogData,
@@ -17,31 +17,39 @@ export async function getStaticProps() {
 export default function Home({ allBlogData }) {
   return (
     <Layout>
-      <Head >
+      <Head className="soul-content soul-font-scale-s">
         <title>{siteTitle}</title>
       </Head>
       <br></br>
 
-      <section className={utilStyles.headingMd}>
-        <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-          
-          <ul className={utilStyles.list}>
-            {allBlogData.map(
-              ({ id, date, title, authorsKey, teaser, writtenBy, index}) => (
+      <section className="soul-content soul-font-scale-s">
+        <div className="soul-grid  soul-grid--horizontal soul-grid--wrap soul-grid--justify-center">
+          {allBlogData.map(
+            ({
+              id,
+              date,
+              title,
+              authorsKey,
+              teaser,
+              writtenBy,
+              seoImage,
+              index,
+            }) => (
+              <div className="soul-grid-item-1/3-span">
                 <PostPreview
-                key={index}
+                  key={index}
                   id={id}
                   date={date}
                   title={title}
                   authorsKey={authorsKey}
                   writtenBy={writtenBy}
                   teaser={teaser}
-                 
+                  seoImage={seoImage}
                 />
-              )
-            )}
-          </ul>
-        </section>
+              </div>
+            )
+          )}
+        </div>
       </section>
     </Layout>
   );

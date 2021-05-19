@@ -9,7 +9,7 @@ tag: "Success story"
 date: '2020-04-07'
 seoTitle: 'Embracing BPMN and DMN | Better-informed decisions in design'
 seoDescription: 'How to enhance informed decision-making with BPMN and DMN.'
-seoImage: '/assets/img/blog/DMN-decision.png'
+seoImage: '/images/DMN-decision.png'
 cardTitle: 'About COMPOSELECTOR'
 cardSubTitle: 'Multi-scale Composite Material Selection Platform with a Seamless Integration of Materials Models and Multidisciplinary Design Framework'
 cardDescription: 'COMPOSELECTOR is an ambitious, innovative and timely project to develop, demonstrate and assess an 

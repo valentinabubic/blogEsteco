@@ -11,30 +11,37 @@ export default function PostPreview({
   title,
   authorsKey,
   teaser,
-  authorsData
+  authorsData,
+  seoImage
 }) {
   return (
     <styles>
-      <li className={utilStyles.listItem} key={id}>
-        <Date dateString={date} />
-        <br></br>
-        <Link href={`/blog/${id}`}>
+  <div class="soul-grid  soul-grid--horizontal">
+  <div class="soul-grid-item-auto-span"><div></div></div>
+  <div class="soul-grid-item-fill-span"><div><div class="soul-card soul-card--flat soul-card--comfortable" key={id}>
+  <div class="soul-card__header">
+    <div class="soul-card__thumbnail"></div>
+    <div class="soul-card__header-content">
+      <h1 class="soul-font-size-l h-text-bold"><Link href={`/blog/${id}`} >
           <a>{title}</a>
-        </Link>
-        <br />
-        <small className={utilStyles.lightText}>
-
-         {authorsKey.map((author, index) => <Link href={`/authors/${author}`} key={index}>
+        </Link></h1>
+      <h2 class="a-label a-label--reduced"><Date dateString={date} /></h2>
+      <h2 class="a-label a-label--reduced"> {authorsKey.map((author, index) => <Link href={`/authors/${author}`} key={index}>
             <a>{author.replace('-', ' ')} </a> 
-          </Link>) }
-          
-
-          <br></br>
-          <div className={utilStyles.summary}>{teaser}</div>
-          <br />
-          <br />
-        </small>
-      </li>
+          </Link>) }</h2>
+    </div>
+  </div>
+  <div class="soul-card__media"><img src={seoImage} width="15%" alt="" /></div>
+  <div class="soul-card__content">
+    <div class="soul-content soul-font-scale-s">
+      <div className={utilStyles.summary}>{teaser}</div>
+    </div>
+  </div>
+</div></div></div>
+  <div class="soul-grid-item-auto-span"><div></div></div>
+</div>
+    
     </styles>
   );
 }
+

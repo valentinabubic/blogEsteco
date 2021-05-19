@@ -9,7 +9,7 @@ tag: "The BPMN standard"
 date: '2020-04-07'
 seoTitle: 'BPMN modeling | Analyze processes more efficiently'
 seoDescription: 'Business Process Modeling and Notation explained  in seven easy points for business analysts.'
-seoImage: '/assets/img/blog/BPM-Life-cycle.png'
+seoImage: '/images/BPM-Life-cycle.png'
 sitemap:
 changefreq: weekly
 teaser: 'As you landed on this page, chances are you already know what Business Process Modeling and Notation is. In this post we focus on modeling with BPMN for two main reasons: BPMN is good for modeling and enables other steps and techniques of the BPM cycle. We’d also like to show you how working with this standard may help you analyze processes more efficiently with the use of the Cardanit editor.'
