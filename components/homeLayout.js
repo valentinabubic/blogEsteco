@@ -6,7 +6,7 @@ export const siteTitle = "Esteco Blog";
 
 export default function Layout({ children, home, backUrl }) {
   return (
-    <div className="soul-content soul-font-scale-l">
+    <div className="soul-content soul-font-scale-l ">
       <div>
         <div>
           <Head></Head>

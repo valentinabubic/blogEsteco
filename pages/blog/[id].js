@@ -5,6 +5,7 @@ import Head from "next/head";
 import Date from "../../components/date";
 import Image from "next/image";
 import Link from "next/link";
+import utilModule from "../../styles/utils.module.css";
 
 export async function getStaticPaths() {
   const paths = getAllBlogIds();
@@ -41,42 +42,51 @@ export default function Post({ blogData, authorsData }) {
         <h1>{blogData.title}</h1>
         <div>
           <Date dateString={blogData.date} />
-          {authorsData.map((data, index) => (
-            <div key={index}>{data.author}</div>
-          ))}
+          <div>
+            {authorsData.map((data, index) => {
+              return index == 0 ? (
+                <span key={index}>{data.author.replace("-", " ")}</span>
+              ) : (
+                <span key={index}>, {data.author.replace("-", " ")}</span>
+              );
+            })}
+          </div>
 
-          <br />
-          <div dangerouslySetInnerHTML={{ __html: blogData.contentHtml }} />
-          <br></br>
-          <br></br>
-          <br></br>
-          <p>
+          <div
+            className="soul-content soul-space-stack-bottom-l"
+            dangerouslySetInnerHTML={{ __html: blogData.contentHtml }}
+          />
+
+          <div className="soul-grid  soul-grid--horizontal soul-grid--vertical-on-xs soul-grid--comfortable-gap">
             {authorsData.map((data, index) => (
-              <div key={index}>
-                <div class="soul-grid  soul-grid--horizontal soul-grid--vertical-on-xs">
-  <div class="soul-grid-item-1/4-span"><div></div></div>
-  <div class="soul-grid-item-1/2-span"><div><div class="soul-card soul-card--flat soul-card--regular">
-                  <div class="soul-card__header">
-                    <div class="soul-card__header-content">
-                      <div class="soul-card__media">
-                        <img
-                          src={data.authorAvatar}
-                          width="20%"
-                          alt={data.authorAvatar}
-                        />
+              <a
+                href={`/authors/${data.authorsKey[0]}`}
+                key={index}
+                className={`${utilModule.nodecoration} soul-grid-item-1/2-span`}
+              >
+                <div className="soul-card soul-card--flat soul-card--regular soul-card--button">
+                  <div className="soul-card__header">
+                    <div className="soul-card__thumbnail">
+                      <div className="soul-avatar  soul-avatar--user  soul-avatar--xl">
+                        <div className="soul-avatar__thumbnail">
+                          <img
+                            className={`${utilModule.nopadding} soul-avatar__image`}
+                            src={data.authorAvatar}
+                            alt={data.authorAvatar}
+                          />
+                        </div>
                       </div>
-                      <h1 class="soul-font-size-l h-text-bold h-text-align-center">
-                        <Link href={`/authors/${data.authorsKey[0]}`}>
-                          {data.author}
-                        </Link>
-                      </h1>
+                    </div>
+                    <div className="soul-card__header-content soul-font-size-l h-text-bold">
+                      
+                        {data.author}
+                     
                     </div>
                   </div>
 
-                  <div class="soul-card__content">
-                    <div class="soul-content soul-font-scale-s">
+                  <div className="soul-card__content">
+                    <div className="soul-content soul-font-scale-s">
                       <p>
-                        {" "}
                         {
                           <div
                             dangerouslySetInnerHTML={{
@@ -87,15 +97,10 @@ export default function Post({ blogData, authorsData }) {
                       </p>
                     </div>
                   </div>
-                </div>  </div></div>
-  <div class="soul-grid-item-1/4-span"><div></div></div>
-
-                
-                <br></br>
-                
-              </div></div>
+                </div>
+              </a>
             ))}
-          </p>
+          </div>
         </div>
       </article>
     </Layout>

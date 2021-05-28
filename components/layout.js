@@ -1,12 +1,12 @@
 import Head from "next/head";
 import Link from "next/link";
-
+import utilModule from "../styles/utils.module.css";
 const name = "Esteco Blog";
 export const siteTitle = "Esteco Blog";
 
 export default function Layout({ children, home, backUrl }) {
   return (
-    <div className="soul-content soul-font-scale-l">
+    <div className=" soul-font-scale-l">
       <div className="soul-grid  soul-grid--horizontal  soul-grid--justify-center">
         <div className="soul-grid-item-1/2-span">
           <div>
@@ -14,15 +14,15 @@ export default function Layout({ children, home, backUrl }) {
             <header>
               {home ? (
                 <>
-                  <h1>{name}</h1>
+                  <h1 className={utilModule.homelink}>{name}</h1>
                 </>
               ) : (
                 <>
-                  <h2 className="h-text-align-center">
+                  <h1 className={utilModule.homelink}>
                     <Link href="/blog">
-                      <a>{name}</a>
+                      {name}
                     </Link>
-                  </h2>
+                  </h1>
                 </>
               )}
             </header>

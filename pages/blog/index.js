@@ -1,6 +1,6 @@
 import Head from "next/head";
-import HomeLayout, { siteTitle } from "../../components/homeLayout";
-
+import Layout, { siteTitle } from "../../components/layout";
+import utilModule from "../../styles/utils.module.css";
 import { getSortedBlogData } from "../../lib/posts";
 import PostPreview from "../../components/post-preview";
 import { getAuthorsData } from "../../lib/authors";
@@ -16,15 +16,14 @@ export async function getStaticProps() {
 
 export default function Home({ allBlogData }) {
   return (
-    <HomeLayout>
-      <div>
-        <Head className="soul-content soul-font-scale-l">
+    <Layout home= "true">
+      <div className={utilModule.indexpage}>
+        <Head>
           <title>{siteTitle}</title>
         </Head>
-        <br></br>
 
-        <section className="soul-content soul-font-scale-l">
-          <div className="soul-grid  soul-grid--horizontal soul-grid--wrap soul-grid--justify-evenly">
+        <section className="  soul-space-stack-top-l">
+          <div className="soul-grid  soul-grid--vertical  soul-grid--fill-height">
             {allBlogData.map(
               ({
                 id,
@@ -35,7 +34,7 @@ export default function Home({ allBlogData }) {
                 writtenBy,
                 seoImage,
               }) => (
-                <div className="soul-grid-item-1/3-span">
+                <div className="soul-grid-item-auto-span soul-space-stack-bottom-l">
                   <PostPreview
                     key={id}
                     id={id}
@@ -52,6 +51,6 @@ export default function Home({ allBlogData }) {
           </div>
         </section>
       </div>
-    </HomeLayout>
+    </Layout>
   );
 }

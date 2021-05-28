@@ -3,7 +3,7 @@ import { getAllAuthorsIds, getAuthorsData } from "../../lib/authors";
 import Head from "next/head";
 import Link from "next/link";
 import { getAuthorPosts } from "../../lib/posts";
-
+import Layout, { siteTitle } from "../../components/layout";
 export async function getStaticPaths() {
   const paths = getAllAuthorsIds();
   return {
@@ -33,15 +33,13 @@ export async function getStaticProps({ params }) {
 
 export default function Authors({ authorsData, authorPosts, id }) {
   return (
-    <OneAuthorLayout backUrl={`/blog`}>
+    <Layout backUrl={`/blog`}>
       <Head>
         <title>{authorsData.author}</title>
       </Head>
-      <div class="soul-grid  soul-grid--horizontal">
-        <div class="soul-grid-item-1/4-span">
-          <div></div>
-        </div>
-        <div class="soul-grid-item-1/2-span">
+     
+        
+        
           <div>
             <div class="soul-card soul-card--flat soul-card--comfortable">
               <div class="soul-card__header">
@@ -54,16 +52,16 @@ export default function Authors({ authorsData, authorPosts, id }) {
                   </h1>
                 </div>
               </div>
-              <div class="soul-card__content">
-                <div class="soul-content soul-font-scale-l">
-                  <p>
+              <div className="soul-card__content soul-content soul-font-scale-l">
+                
+                  
                     <div
                       dangerouslySetInnerHTML={{
                         __html: authorsData.contentHtml,
                       }}
                     />
-                  </p>
-                </div>
+                  
+                
               </div>
               <div class="soul-card__divider"></div>
               <div class="soul-card__content">
@@ -79,12 +77,10 @@ export default function Authors({ authorsData, authorPosts, id }) {
                 </ul>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="soul-grid-item-1/4-span">
-          <div></div>
-        </div>
+          
+        
+        
       </div>
-    </OneAuthorLayout>
+    </Layout>
   );
 }

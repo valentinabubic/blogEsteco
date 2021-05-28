@@ -1,0 +1,20 @@
+.indexImage.indexImage.indexImage {
+  max-width: 75%;
+  height: 200px;
+}
+
+.indexpage a,
+.indexpage a:hover {
+  text-decoration: none;
+}
+.homelink,
+.homelink a {
+  text-decoration: none;
+}
+
+.nopadding.nopadding.nopadding.nopadding.nopadding {
+  padding: 0;
+}
+.nodecoration.nodecoration.nodecoration.nodecoration.nodecoration {
+  text-decoration: none;
+}
