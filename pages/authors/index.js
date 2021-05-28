@@ -1,8 +1,9 @@
 import Head from "next/head";
-import AuthorsLayout, { siteTitle } from "../../components/authorsLayout";
-import Link from "next/link";
+import Layout, { siteTitle } from "../../components/layout";
+import utilModule from "../../styles/utils.module.css";
 import { getSortedAuthorsData } from "../../lib/authors";
 import AuthorsPreview from "../../components/authors-preview";
+
 export async function getStaticProps() {
   const allAuthorsData = getSortedAuthorsData();
 
@@ -14,22 +15,26 @@ export async function getStaticProps() {
 }
 export default function Home({ allAuthorsData }) {
   return (
-    <AuthorsLayout>
-      <Head>
-        <title>{siteTitle}</title>
-      </Head>
+    <Layout>
+      <div className={utilModule.indexpage}>
+        <Head>
+          <title>{siteTitle}</title>
+        </Head>
 
-      <section className="">
-        {allAuthorsData.map(({ id, author, authorAvatar }) => (
-          <div className="soul-grid-item-1/3-span">
-            <AuthorsPreview
-              id={id}
-              authorAvatar={authorAvatar}
-              author={author}
-            />
+        <section className="soul-space-stack-top-l">
+          <div className="soul-grid  soul-grid--vertical  soul-grid--fill-height">
+            {allAuthorsData.map(({ id, author, authorAvatar }) => (
+              <div className="soul-grid-item-auto-span soul-space-stack-bottom-l">
+                <AuthorsPreview
+                  id={id}
+                  authorAvatar={authorAvatar}
+                  author={author}
+                />
+              </div>
+            ))}
           </div>
-        ))}
-      </section>
-    </AuthorsLayout>
+        </section>
+      </div>
+    </Layout>
   );
 }

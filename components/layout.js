@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import utilModule from "../styles/utils.module.css";
+
 const name = "Esteco Blog";
 export const siteTitle = "Esteco Blog";
 
@@ -10,7 +11,7 @@ export default function Layout({ children, home, backUrl }) {
       <div className="soul-grid  soul-grid--horizontal  soul-grid--justify-center">
         <div className="soul-grid-item-1/2-span">
           <div>
-            <Head></Head>
+            
             <header>
               {home ? (
                 <>

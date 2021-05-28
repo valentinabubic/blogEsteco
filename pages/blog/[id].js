@@ -38,7 +38,7 @@ export default function Post({ blogData, authorsData }) {
       <Head>
         <title>{blogData.title}</title>
       </Head>
-      <article>
+      <article className="soul-content">
         <h1>{blogData.title}</h1>
         <div>
           <Date dateString={blogData.date} />

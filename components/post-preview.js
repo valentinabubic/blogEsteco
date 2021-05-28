@@ -24,16 +24,11 @@ export default function PostPreview({
 
               <p className="a-label a-label--reduced">
                 {authorsKey.map((author, index) => {
-                  
-                    return(
-                      index ==0 ? (
-                       
-                          <span key={index}>{author.replace("-", " ")}</span>
-                       
-                      ) : (
-                        <span key={index}>, {author.replace("-", " ")}</span> 
-                      )
-                    )
+                  return index == 0 ? (
+                    <span key={index}>{author.replace("-", " ")}</span>
+                  ) : (
+                    <span key={index}>, {author.replace("-", " ")}</span>
+                  );
                 })}
               </p>
             </div>

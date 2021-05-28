@@ -1,34 +1,26 @@
-import Link from "next/link";
-import Image from "next/image";
+import utilModule from "../styles/utils.module.css";
 
-export default function AuthorsPreview({ 
-  id, 
-  author, 
-  authorAvatar
- }) {
+export default function AuthorsPreview({ id, author, authorAvatar }) {
   return (
-    
-      <div className="soul-grid  soul-grid--horizontal  ">
-        <div className="soul-grid-item-1/4-span">
-          <div>
-            <div className="soul-card soul-card--flat soul-card--comfortable">
-              <div className="soul-card__header">
-                <div className="soul-card__thumbnail"></div>
-                <div className="soul-card__header-content">
-                  <h1 className="soul-font-size-l h-text-bold">
-                    <Link href={`/authors/${id}`}>
-                      <a>{author}</a>
-                    </Link>
-                  </h1>
-                </div>
-              </div>
-              <div className="soul-card__media">
-                <img src={authorAvatar} width="30%" alt={authorAvatar} />
+    <a href={`/authors/${id}`}>
+      <div className="soul-card soul-card--button soul-card--regular soul-card--comfortable ">
+        <div className="soul-card__header">
+          <div className="soul-card__thumbnail">
+            <div className="soul-avatar  soul-avatar--user  soul-avatar--xl">
+              <div className="soul-avatar__thumbnail">
+                <img
+                  className={`${utilModule.nopadding} soul-avatar__image`}
+                  src={authorAvatar}
+                  alt={authorAvatar}
+                />
               </div>
             </div>
           </div>
+          <div className="soul-card__header-content soul-font-size-l h-text-bold">
+            {author}
+          </div>
         </div>
       </div>
-    
+    </a>
   );
 }
