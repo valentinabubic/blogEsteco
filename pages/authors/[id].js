@@ -67,17 +67,26 @@ export default function Authors({ authorsData, authorPosts, id }) {
           />
         </div>
         <div className="soul-card__divider"></div>
-        <div className="soul-card__content">
-          <h3>Post dell'autore</h3>
-          <ul>
-            {authorPosts.map((post, index) => (
-              <li key={index}>
-                <Link href={`/blog/${post.postId}`}>
-                  <a>{post.data.title}</a>
-                </Link>
-              </li>
-            ))}
-          </ul>
+        <div className="soul-card__content ">
+          <h3 className="soul-content soul-space-stack-bottom-l">
+            Post dell'autore
+          </h3>
+
+          {authorPosts.map((post, index) => (
+            <a
+              href={`/blog/${post.postId}`}
+              class="soul-navigation-card  soul-navigation-card--comfortable soul-card--button "
+            >
+              <div class="soul-navigation-card__content">
+                <div class="soul-navigation-card__title">
+                  <span class="soul-font-size-m h-text-bold">
+                    {post.data.title}
+                  </span>
+                </div>
+              </div>
+              <span class="soul-navigation-card__icon"></span>
+            </a>
+          ))}
         </div>
       </div>
     </Layout>
