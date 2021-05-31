@@ -31,13 +31,13 @@ export default function Layout({ children, home, backUrl }) {
             <br></br>
             <br></br>
             {backUrl ? (
-              <>
-                <div className="a-button  a-button--primary">
+              <div className="soul-space-stack-bottom-m">
+                <div className="a-button  a-button--primary ">
                   <Link href={backUrl}>
                     <a>← Home</a>
                   </Link>
                 </div>
-              </>
+              </div>
             ) : (
               <></>
             )}

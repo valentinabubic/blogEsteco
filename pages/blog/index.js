@@ -16,7 +16,7 @@ export async function getStaticProps() {
 
 export default function Home({ allBlogData }) {
   return (
-    <Layout home= "true">
+    <Layout home="true">
       <div className={utilModule.indexpage}>
         <Head>
           <title>{siteTitle}</title>

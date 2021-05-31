@@ -1,6 +1,5 @@
 import { getAllAuthorsIds, getAuthorsData } from "../../lib/authors";
 import Head from "next/head";
-import Link from "next/link";
 import { getAuthorPosts } from "../../lib/posts";
 import Layout, { siteTitle } from "../../components/layout";
 import utilModule from "../../styles/utils.module.css";
