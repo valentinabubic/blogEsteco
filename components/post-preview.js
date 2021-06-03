@@ -22,15 +22,7 @@ export default function PostPreview({
 
               <Date className="a-label a-label--reduced" dateString={date} />
 
-              <p className="a-label a-label--reduced">
-                {authorsKey.map((author, index) => {
-                  return index == 0 ? (
-                    <span key={index}>{author.replace("-", " ")}</span>
-                  ) : (
-                    <span key={index}>, {author.replace("-", " ")}</span>
-                  );
-                })}
-              </p>
+              <p className="a-label a-label--reduced">{authorsKey}</p>
             </div>
           </div>
           <div className="soul-card__media">
@@ -38,7 +30,7 @@ export default function PostPreview({
           </div>
           <div className="soul-card__content">
             <div className="soul-content soul-font-scale-s">
-              <div className={utilStyles.summary}>{teaser}</div>
+              <div className={utilStyles.summary} dangerouslySetInnerHTML={{ __html: teaser }} /> 
             </div>
           </div>
         </div>

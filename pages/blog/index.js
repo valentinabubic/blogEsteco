@@ -6,13 +6,14 @@ import PostPreview from "../../components/post-preview";
 import { getAuthorsData } from "../../lib/authors";
 
 export async function getStaticProps() {
-  let allBlogData = getSortedBlogData();
+  let allBlogData = await getSortedBlogData();
   return {
     props: {
       allBlogData,
     },
   };
 }
+
 
 export default function Home({ allBlogData }) {
   return (

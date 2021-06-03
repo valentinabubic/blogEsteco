@@ -8,57 +8,47 @@ import Link from "next/link";
 import utilModule from "../../styles/utils.module.css";
 
 export async function getStaticPaths() {
-  const paths = getAllBlogIds();
+  const paths = await getAllBlogIds();
+  
   return {
-    paths,
+    paths: paths,
     fallback: false,
   };
 }
 
 export async function getStaticProps({ params }) {
   const blogData = await getBlogData(params.id);
-  let authorsData = [];
-  await Promise.all(
-    blogData.authorsKey.map(async (author) => {
-      authorsData.push(await getAuthorsData(author));
-      return authorsData;
-    })
-  );
+ 
   return {
     props: {
       blogData,
-      authorsData,
+      
     },
   };
 }
 
-export default function Post({ blogData, authorsData }) {
+export default function Post({ blogData }) {
   return (
     <Layout backUrl={`/blog`}>
       <Head>
-        <title>{blogData.title}</title>
+        <title>{blogData.singlePost.title}</title>
       </Head>
       <article className="soul-content">
-        <h1>{blogData.title}</h1>
+        {console.log(blogData)}
+        <h1>{blogData.singlePost.title}</h1>
         <div>
-          <Date dateString={blogData.date} />
+          <p>{blogData.singlePost.date}</p>
           <div>
-            {authorsData.map((data, index) => {
-              return index == 0 ? (
-                <span key={index}>{data.author.replace("-", " ")}</span>
-              ) : (
-                <span key={index}>, {data.author.replace("-", " ")}</span>
-              );
-            })}
+            {/* aggiungi autore */}
           </div>
 
           <div
             className="soul-content soul-space-stack-bottom-l"
-            dangerouslySetInnerHTML={{ __html: blogData.contentHtml }}
+            dangerouslySetInnerHTML={{ __html: blogData.singlePost.contentHtml }}
           />
 
           <div className="soul-grid  soul-grid--horizontal soul-grid--vertical-on-xs soul-grid--comfortable-gap">
-            {authorsData.map((data, index) => (
+            {/* {authorsData.map((data, index) => (
               <a
                 href={`/authors/${data.authorsKey[0]}`}
                 key={index}
@@ -78,9 +68,7 @@ export default function Post({ blogData, authorsData }) {
                       </div>
                     </div>
                     <div className="soul-card__header-content soul-font-size-l h-text-bold">
-                      
-                        {data.author}
-                     
+                      {data.author}
                     </div>
                   </div>
 
@@ -99,7 +87,7 @@ export default function Post({ blogData, authorsData }) {
                   </div>
                 </div>
               </a>
-            ))}
+            ))} */}
           </div>
         </div>
       </article>
